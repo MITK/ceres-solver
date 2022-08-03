@@ -1373,14 +1373,14 @@ struct NumTraits<ceres::Jet<T, N>> {
 // matrix/array is of type Jet and the other is a scalar type. This improves
 // performance by using the optimized scalar-to-Jet binary operations but
 // is only available on Eigen versions >= 3.3
-template <typename BinaryOp, typename T, int N>
+/*template <typename BinaryOp, typename T, int N>
 struct ScalarBinaryOpTraits<ceres::Jet<T, N>, T, BinaryOp> {
   using ReturnType = ceres::Jet<T, N>;
 };
 template <typename BinaryOp, typename T, int N>
 struct ScalarBinaryOpTraits<T, ceres::Jet<T, N>, BinaryOp> {
   using ReturnType = ceres::Jet<T, N>;
-};
+};*/
 
 }  // namespace Eigen
 
